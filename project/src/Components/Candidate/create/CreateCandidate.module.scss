@@ -1,0 +1,285 @@
+.candidateContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+
+  .main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    min-height: 100vh;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      color: #000;
+      margin-top: 20px;
+    }
+  }
+
+  .fieldrequiredCandidate {
+    color: red;
+  }
+}
+
+.sidebar {
+  width: 15vw;
+  background-color: #ffeaa7;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #dfe6e9;
+}
+
+.sidebar a div {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.sidebar .icon {
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.nav h2 {
+  margin: 0;
+}
+
+.nav .userLogout {
+  display: flex;
+  align-items: center;
+}
+
+.nav .user {
+  margin-right: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a svg {
+  margin-right: 8px;
+}
+
+.back {
+  margin-right: 10px;
+  color: #000;
+}
+
+.back:hover {
+  color: red;
+}
+
+.separator {
+  margin: 0 10px;
+  font-size: 32px;
+}
+
+.candidateInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.infoGroup {
+  display: contents;
+}
+
+.infoGroup h4 {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.personalInfoLeft {
+  grid-column: 1 / 2;
+  width: 90%;
+  margin-left: 30px;
+}
+
+.personalInfoRight {
+  grid-column: 2 / 3;
+  width: 90%;
+}
+
+.personalInfoLeft p,
+.personalInfoRight p {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #495057;
+  background-color: #ffffff;
+  // height: 50px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="file"]::placeholder,
+input[type="date"]::placeholder {
+  color: #6c757d;
+  font-size: 15px;
+}
+
+.candidateInfo .infoGroup p {
+  margin: 15px 0;
+}
+
+.candidateInfo .infoGroup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.candidateInfo .infoGroup ul li {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  /* Đẩy formActions xuống dưới cùng của .main */
+  padding: 20px 10px;
+  /* Thêm khoảng cách giữa các nút và đáy trang */
+  background-color: #fff;
+  /* Màu nền của formActions */
+}
+
+.formActions button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.formActions button:last-child {
+  background-color: #6c757d;
+}
+
+.dateOfBirth {
+  margin-bottom: 1rem;
+}
+
+.inputDate {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.candidateInfo select {
+  max-width: unset;
+  border-radius: 5px;
+  padding: 10px !important;
+  height: 45px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidateInfo {
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+}

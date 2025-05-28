@@ -1,0 +1,28 @@
+.dropdownMenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    max-width: 200px; /* Adjust based on your design */
+    z-index: 1000;
+    width: auto;
+}
+
+.jobTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.jobRow {
+    cursor: pointer;
+}
+
+.jobRow:hover {
+    background-color: #f5f5f5;
+}
+
+.jobRow td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}

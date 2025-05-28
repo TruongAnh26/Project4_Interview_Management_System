@@ -1,0 +1,90 @@
+.OfferformGroup {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.required {
+    font-size: 19px;
+    font-weight: 600;
+    width: 180px;
+}
+
+.largeInput {
+    font-size: 17px;
+    color: black;
+    margin-left: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* Space between buttons */
+}
+
+.cancelButton {
+    background-color: #ff7675;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.approveButton {
+    background-color: #55efc4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.rejectButton {
+    background-color: #ff7675;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.acceptedButton,
+.markassentButton {
+    background-color: #74b9ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.declineButton {
+    background-color: #ffcccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.cancelButton:hover,
+.declineButton:hover,
+.acceptedButton:hover,
+.markassentButton:hover {
+    color: #fff200;
+}
+
+.success {
+    color: green;
+}

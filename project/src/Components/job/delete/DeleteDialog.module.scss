@@ -1,0 +1,59 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 12rem;
+  width: 26rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialogButton {
+  display: inline-flex;
+  gap: 30px;
+  margin: 5px;
+}
+
+.dialog button {
+  height: 3rem;
+  width: 6.25rem;
+  border-radius: 10px;
+}
+
+.yes {
+  background-color: #A02334;
+  color: white;
+  border: 1px solid #A02334;
+}
+
+.no {
+  background-color: #365E32;
+  color: white;
+  border: 1px solid #365E32;
+}
+
+.no:hover{
+  background-color: #12372A;
+}
+
+.yes:hover{
+  background-color: #EC8F5E;
+}

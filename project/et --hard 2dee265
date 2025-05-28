@@ -1,0 +1,26 @@
+[33m989d8f4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: pull origin master: Fast-forward
+[33me003178[m HEAD@{1}: pull origin master: Fast-forward
+[33m2dee265[m HEAD@{2}: reset: moving to HEAD
+[33m2dee265[m HEAD@{3}: pull origin: Fast-forward
+[33m9495561[m HEAD@{4}: checkout: moving from tien to master
+[33md3910dc[m[33m ([m[1;32mtien[m[33m)[m HEAD@{5}: commit: update.
+[33m9c9e395[m[33m ([m[1;31morigin/tien[m[33m)[m HEAD@{6}: commit: update
+[33mae4f618[m HEAD@{7}: commit: Save
+[33m9495561[m HEAD@{8}: checkout: moving from master to tien
+[33m9495561[m HEAD@{9}: commit: update
+[33m15ea3d1[m HEAD@{10}: pull origin master: Fast-forward
+[33m9b46d50[m HEAD@{11}: commit: update nav
+[33m5d87ed5[m HEAD@{12}: commit (merge): Merge branch 'master' of https://gitlab.com/Tiendzai083102/project
+[33m68751e9[m HEAD@{13}: commit: update api
+[33m8ddc111[m HEAD@{14}: pull origin master: Fast-forward
+[33mf8a9d77[m HEAD@{15}: commit: tienupdate
+[33mdce0041[m HEAD@{16}: commit (merge): Merge branch 'master' of https://gitlab.com/Tiendzai083102/project
+[33me0ad94e[m HEAD@{17}: commit: ketnoiapi
+[33m602b1ff[m HEAD@{18}: pull origin master: Fast-forward
+[33md786c7d[m HEAD@{19}: commit: update
+[33mb6d535c[m HEAD@{20}: pull origin master: Fast-forward
+[33md2258b4[m HEAD@{21}: pull origin master: Merge made by the 'ort' strategy.
+[33m979c9d8[m HEAD@{22}: commit: update
+[33m57db0dd[m HEAD@{23}: commit: update by vuvantien
+[33m8afa0fa[m HEAD@{24}: commit: Initial commit
+[33mb841dad[m HEAD@{25}: commit (initial): Initialize project using Create React App

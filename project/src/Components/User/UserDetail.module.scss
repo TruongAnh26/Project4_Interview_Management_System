@@ -1,0 +1,114 @@
+/* UserDetail.module.scss */
+
+/* Container của thông tin người dùng */
+.userlistContainer {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
+/* Nhóm form */
+.userForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Nhóm các phần tử trong mỗi cột */
+.formGroup {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 0.5rem);
+    /* Chiếm 50% chiều rộng mỗi cột trừ khoảng cách giữa chúng */
+}
+
+/* Các lớp khác */
+.label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+    min-width: 180px;
+}
+
+.topic {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.labelContain {
+    font-size: 1rem;
+    color: #666;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* Nút trạng thái khi người dùng là ACTIVE (đang kích hoạt) */
+.deactivateButton {
+    background-color: red;
+    /* Màu nền đỏ cho trạng thái ACTIVE */
+    color: white;
+    /* Màu chữ trắng */
+    border: none;
+    /* Loại bỏ viền mặc định của nút */
+    padding: 0.5rem 1rem;
+    /* Thêm padding cho nút */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    cursor: pointer;
+    /* Hiển thị con trỏ tay khi hover */
+    font-size: 1rem;
+    /* Kích thước chữ */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+/* Nút trạng thái khi người dùng là INACTIVE (không kích hoạt) */
+.activateButton {
+    background-color: green;
+    /* Màu nền xanh cho trạng thái INACTIVE */
+    color: white;
+    /* Màu chữ trắng */
+    border: none;
+    /* Loại bỏ viền mặc định của nút */
+    padding: 0.5rem 1rem;
+    /* Thêm padding cho nút */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    cursor: pointer;
+    /* Hiển thị con trỏ tay khi hover */
+    font-size: 1rem;
+    /* Kích thước chữ */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+/* Container của trạng thái người dùng */
+.statusContainer {
+    font-weight: bold;
+}
+
+/* Trạng thái ACTIVE */
+.statusActive {
+    color: green;
+}
+
+/* Trạng thái INACTIVE */
+.statusInactive {
+    color: red;
+}
+
+/* Error message */
+.error {
+    color: red;
+}

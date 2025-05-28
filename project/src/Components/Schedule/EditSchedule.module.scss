@@ -1,0 +1,71 @@
+.container-fluid {
+    padding: 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.form-control-plaintext {
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    margin: 0;
+}
+
+.w-100 {
+    width: 100%;
+    height: 100%;
+}
+.Home_sidebar__vSd6Z {
+    width: 15vw;
+    background-color: #ffeaa7;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.buttonContainer {
+    display: flex; /* Sử dụng Flexbox để dễ dàng căn giữa các phần tử */
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+
+/* Đảm bảo bạn đã đặt tên lớp chính xác trong React component */
+.formActions {
+    display: flex; /* Sử dụng Flexbox để căn giữa các nút */
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.saveBtn {
+    background-color: #007bff; /* Màu xanh cho nút Save */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Loại bỏ đường viền mặc định */
+    padding: 10px 20px; /* Padding cho nút */
+    border-radius: 5px; /* Bo góc cho nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.saveBtn:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi di chuột qua nút */
+}
+
+.cancelBtn {
+    background-color: #dc3545; /* Màu đỏ cho nút Cancel */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Loại bỏ đường viền mặc định */
+    padding: 10px 20px; /* Padding cho nút */
+    border-radius: 5px; /* Bo góc cho nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.cancelBtn:hover {
+    background-color: #c82333; /* Màu đỏ đậm hơn khi di chuột qua nút */
+}
+

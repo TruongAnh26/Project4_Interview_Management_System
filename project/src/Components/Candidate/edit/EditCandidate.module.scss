@@ -1,0 +1,336 @@
+.candidateContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 15vw;
+  background-color: #ffeaa7;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #dfe6e9;
+}
+
+.sidebar a div {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.sidebar .icon {
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  min-height: 100vh; /* Đảm bảo chiều cao tối thiểu bằng chiều cao của màn hình */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav h2 {
+  margin: 0;
+}
+
+.nav .userLogout {
+  display: flex;
+  align-items: center;
+}
+
+.nav .user {
+  margin-right: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a svg {
+  margin-right: 8px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.back {
+  margin-right: 10px;
+  color: #000;
+}
+
+.back:hover {
+  color: red;
+}
+
+.separator {
+  margin: 0 10px;
+  font-size: 32px;
+}
+
+.candidateInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.infoGroup {
+  display: contents;
+}
+
+.infoGroup h4 {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.personalInfoLeft {
+  grid-column: 1 / 2;
+  width: 90%;
+  margin-left: 30px;
+}
+
+.personalInfoRight {
+  grid-column: 2 / 3;
+  width: 90%;
+}
+
+.personalInfoLeft p,
+.personalInfoRight p {
+  margin: 10px 0;
+}
+
+.personalInfoLeft a {
+  display: block;
+  margin-top: 17px; /* Tùy chọn thêm khoảng cách nếu cần */
+}
+
+/* Cải tiến kiểu dáng cho các input */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử chứa */
+  padding: 10px;
+  border: 1px solid #ced4da; /* Đường viền mờ cho các input */
+  border-radius: 5px; /* Bo góc cho các input */
+  box-sizing: border-box; /* Đảm bảo padding và border được tính vào tổng chiều rộng */
+  font-size: 16px; /* Kích thước chữ cho các input */
+  color: #495057; /* Màu chữ cho các input */
+  background-color: #ffffff; /* Màu nền cho các input */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển đổi cho viền và bóng */
+}
+
+select:focus {
+  border-color: #007bff; /* Màu viền khi select đang được chọn */
+  outline: none; /* Loại bỏ viền mặc định khi select được chọn */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Thêm bóng nhẹ khi select được chọn */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff; /* Màu viền khi input đang được chọn */
+  outline: none; /* Loại bỏ viền mặc định khi input được chọn */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Thêm bóng nhẹ khi input được chọn */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="date"]::placeholder {
+  color: #6c757d; /* Màu chữ cho placeholder */
+  font-size: 15px; /* Kích thước chữ cho placeholder */
+}
+
+.candidateInfo .infoGroup p {
+  margin: 15px 0;
+}
+
+.candidateInfo .infoGroup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.candidateInfo .infoGroup ul li {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Đẩy formActions xuống dưới cùng của .main */
+  padding: 20px 10px; /* Thêm khoảng cách giữa các nút và đáy trang */
+  background-color: #fff; /* Màu nền của formActions */
+}
+
+.formActions button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.formActions button:last-child {
+  background-color: #6c757d;
+}
+
+/* Cải thiện kiểu dáng cho danh sách các kỹ năng đã chọn */
+.selectedSkills {
+  margin-top: 10px;
+}
+
+.selectedSkills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selectedSkills li {
+  background-color: #f8f9fa;
+  border: 1px solid #e2e6ea;
+  border-radius: 5px;
+  margin: 2px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.selectedSkills strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Thêm kiểu cho phần CV Attachment */
+.cvAttachmentContainer {
+  margin-top: 15px;
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cvAttachmentContainer a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.cvAttachmentContainer a:hover {
+  background-color: #0056b3;
+}
+
+.uploadCvContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.uploadCvContainer label {
+  font-size: 16px;
+}
+
+.uploadCvContainer input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #495057;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  // border: 1px solid red;
+}
+
+.uploadCvContainer input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.candidateInfo select {
+  max-width: unset;
+  border-radius: 5px;
+  padding: 10px !important;
+  height: 45px;
+}

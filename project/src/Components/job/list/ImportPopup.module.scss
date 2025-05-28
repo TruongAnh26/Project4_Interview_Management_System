@@ -1,0 +1,130 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.dialog {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 5px;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+}
+
+.cancelButton {
+  background-color: #C40C0C;
+  color: #ffffff;
+  border: 1px solid #C40C0C;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancelButton:hover {
+  background-color: #F5EDED;
+  color: #C40C0C;
+}
+
+.step input {
+  padding-left: 15px;
+}
+
+.titleStep {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.previewContainer {
+  display: flex;
+  gap: 10px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.directionButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.directionButton button {
+  color: #ffffff;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.directionButtonBack {
+  background-color: #FFA447;
+  border: 1px solid #FFA447;
+}
+
+.directionButtonBack:hover {
+  color: #FFA447;
+  background-color: #F5EDED;
+}
+
+.directionButtonNext {
+  background-color: #337357;
+  border: 1px solid #337357;
+}
+
+.directionButtonNext:hover {
+  color: #337357;
+  background-color: #F5EDED;
+}
+
+.step .lastStepButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.step .lastStepButton .lastStepButtonImport {
+  background-color: #1B3C73;
+  border: 1px solid #1B3C73;
+  color: white;
+}
+
+.step .lastStepButton .lastStepButtonImport:hover {
+  background-color: #F5EDED;
+  color: #1B3C73;
+}
+
+.step .lastStepButton .lastStepButtonCancel {
+  background-color: #FFA447;
+  border: 1px solid #FFA447;
+  color: white;
+}
+
+.step .lastStepButton .lastStepButtonCancel:hover {
+  background-color: #F5EDED;
+  color: #FFA447;
+}

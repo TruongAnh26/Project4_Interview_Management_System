@@ -1,0 +1,82 @@
+/* CreateOffer.module.scss */
+.OfferformGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.OfferformGroup label {
+  flex: 1;
+  margin-right: 10px;
+  /* Khoảng cách giữa nhãn và ô nhập liệu */
+  font-weight: bold;
+  max-width: 160px;
+  /* Độ rộng tối đa của nhãn */
+}
+
+.OfferformGroup label.required::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
+}
+
+.OfferformGroup label.duedate::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
+}
+
+.OfferformGroup input,
+.OfferformGroup select {
+  flex: 2;
+  max-width: 300px;
+  /* Độ rộng tối đa của ô nhập liệu */
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.OfferformGroup input[type="date"] {
+  flex: none;
+  width: auto;
+  padding: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formActions button {
+  margin-right: 10px;
+}
+
+.smallLabel {
+  font-size: 13px;
+  font-weight: normal;
+  margin-left: 5px;
+  /* Khoảng cách giữa nhãn nhỏ và ô nhập liệu */
+}
+
+.OfferformGroup .smallLabel {
+  font-size: 13px;
+  font-weight: normal;
+  max-width: 35px;
+}
+
+.OfferformGroup .labelcontainer {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.OfferformGroup .note {
+  min-height: 30px;
+  width: 100%;
+  /* Đảm bảo ô nhập liệu ghi chú có độ rộng đầy đủ */
+}
+
+.submitButton {
+  max-width: 200px;
+  max-height: 70px;
+  justify-content: space-between;
+}
